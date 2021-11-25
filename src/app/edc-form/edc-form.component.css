@@ -1,0 +1,80 @@
+.edufor{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tittle{
+  font-size: 24pt;
+  font-weight: bold;
+  align-items: center;
+}
+.bloque {
+  display: flex;
+  margin-bottom: 2%;
+}
+.fechas{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 1%;
+  padding-top: 5px;
+  width: 30%;
+  color:rgb(0, 68, 156);
+  font-weight: bold;
+  font-size: 12pt;
+}
+.separador{
+  background: #9cdcc6;
+  width: 3px;
+  height: auto;
+  margin-right: 0.5%;
+}
+.datos{
+  width: 70%;
+}
+.curso{
+  font-weight: bold;
+  font-size: 16pt;
+  height: 20%;
+}
+.global{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+@media screen and (max-width: 1040px) {
+  .fechas{
+    font-size: 10pt;
+    display: flex;
+    justify-content: start;
+    flex-direction:column;
+  /* margin-right: 1%;
+  padding-top: 5px; */
+  width: 30%;
+  color:rgb(0, 68, 156);
+  font-weight: bold;
+  text-align: right;
+
+  }
+  .bloque {
+    display: flex;
+    margin-bottom: 35px;
+
+  }
+
+
+  .tittle{
+    font-size: 14pt;
+
+  }
+  .curso{
+    font-size: 10pt;
+  }
+  .separador{
+    background: #9cdcc6;
+    width: 2px;
+    height: auto;
+    margin-right: 2%;
+    margin-left: 0.7%;
+  }
+
+}

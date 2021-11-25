@@ -1,0 +1,44 @@
+.pht {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 8%;
+}
+
+.infoper{
+  padding-top: 10px;
+  font-style:italic;
+  text-align: center;
+}
+.img-pro {
+  width: 100%;
+  height: auto;
+}
+button {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.ico {
+  padding-top: 8%;
+  width: 32px;
+  height: 32px;
+}
+
+.divbot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 8%;
+  padding-bottom: 8%;
+}
+p {
+  padding: 2%;
+}
+.desc{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

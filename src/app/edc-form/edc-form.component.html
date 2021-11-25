@@ -1,0 +1,20 @@
+<div class="edufor">
+  <p class="tittle"> Formación </p>
+  <div class="global">
+    <div class="bloque" *ngFor="let edu of edu_form">
+      <div class="fechas">
+        <p>{{edu.fecha_inicio}}</p> <span>&nbsp;-&nbsp;</span>
+        <p>{{edu.fecha_fin}}</p>
+      </div>
+      <div class="separador"></div>
+      <div class="datos">
+        <p class="curso">{{edu.curso}}</p>
+        <p>{{edu.centro}}</p>
+        <p>{{edu.descripcion}}</p>
+
+      </div>
+      <br>
+
+    </div>
+  </div>
+  </div>

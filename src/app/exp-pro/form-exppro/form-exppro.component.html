@@ -1,0 +1,61 @@
+<div class="area">
+<div class="row">
+  <div class="col-xs-12">
+    <form [formGroup]="expProForm">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="form-group">
+            <label for="puesto">Puesto de Trabajo</label>
+            <input type="text" id="puesto" formControlName="puesto" class="form-control">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="form-group">
+            <label for="empresa">Empresa</label>
+            <input type="text" id="empresa" formControlName="empresa" class="form-control">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="form-group">
+            <label for="descripcion">Descripcion</label>
+            <textarea type="text" id="descripcion" class="form-control" formControlName="descripcion"
+              rows="6"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="form-group">
+            <label for="fecha_inicio">Fecha inicio</label>
+            <input type="text" id="fecha_inicio" formControlName="fecha_inicio" class="form-control">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="form-group">
+            <label for="fecha_fin">Fecha fin</label>
+            <input type="text" id="fecha_fin" formControlName="fecha_fin" class="form-control">
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12">
+        <button type="submit" class="btn btn-success"  (click)="onSubmit()">Guardar</button>
+        <button type="button" class="btn btn-danger" (click)="onCancel()">Cancelar</button>
+
+        <select id="expmod" formControlName="expmod" class="max_select" (change)="onEdit()">
+          <option *ngFor="let p of modExpPro" [ngValue]="p">{{ p.puesto_de_trabajo }}</option>
+        </select>
+
+        <button type="submit" class="btn btn-success" (click)="onUpdate()">modificar</button>
+        <button type="submit" class="btn btn-danger" (click)="onDelete()">borrar</button>
+
+      </div>
+    </form>
+  </div>
+</div>
+</div>

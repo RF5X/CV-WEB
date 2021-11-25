@@ -1,0 +1,83 @@
+<nav>
+  <div class="navcontrol">
+    <ul>
+      <div style="" [ngClass]="{global : activado=='hidden', global_menu: activado=='flex'}">
+        <div class="icon_menu">
+            <li>
+              <div class="control-menu">
+                <i class="bi bi-three-dots" (click)="loge()"></i>
+              </div>
+            </li>
+        </div>
+          <div class="menu_desp" [ngClass]="{visible_no : activado=='hidden', visible_si: activado=='flex'}">
+            <!-- <ul>
+              <div class="menu_option" routerLinkActive="active">
+                <i class="bi bi-house-fill" routerLink="/home"></i>
+                <a class="menu_movil" routerLink="/home">Home</a>
+              </div>
+            </ul> -->
+            <ul>
+              <div class="menu_option" routerLinkActive="active">
+                <i class="bi bi-file-person" routerLink="/informacion"></i>
+                <a class="menu_movil" routerLink="/informacion">Información Personal</a>
+              </div>
+            </ul>
+            <ul>
+              <div class="menu_option" routerLinkActive="active">
+                <i class="bi bi-journal-bookmark-fill" routerLink="/experiencia"></i>
+                <a class="menu_movil" routerLink="/experiencia">Experiencia</a>
+              </div>
+            </ul>
+            <ul>
+              <div class="menu_option" routerLinkActive="active">
+                <i class="bi bi-folder-check" routerLink="/formacion"></i>
+                <a class="menu_movil" routerLink="/formacion">Formación</a>
+              </div>
+            </ul>
+            <ul>
+              <div class="menu_option" routerLinkActive="active">
+                <i class="bi bi-list-check" routerLink="/competencias"></i>
+                <a class="menu_movil" routerLink="/competencias">Competencias</a>
+              </div>
+            </ul>
+          </div>
+
+        <div class="global" [ngClass]="{visible_no : activado=='flex', visible_si: activado=='hidden'}">
+
+            <li>
+              <div class="icon" routerLinkActive="active">
+              <i class="bi bi-file-person" routerLink="/informacion"></i>
+              <a class="link_movil" routerLink="/informacion">Información Personal</a>
+              </div>
+            </li>
+
+
+            <li>
+              <div class="icon" routerLinkActive="active">
+              <i class="bi bi-journal-bookmark-fill" routerLink="/experiencia"></i>
+              <a class="link_movil" routerLink="/experiencia">Experiencia</a>
+              </div>
+            </li>
+
+
+            <li>
+              <div class="icon" routerLinkActive="active">
+              <i class="bi bi-folder-check" routerLink="/formacion"></i>
+              <a class="link_movil" routerLink="/formacion">Formación</a>
+              </div>
+            </li>
+
+
+            <li>
+              <div class="icon" routerLinkActive="active">
+              <i class="bi bi-list-check" routerLink="/competencias"></i>
+              <a class="link_movil" routerLink="/competencias">Competencias</a>
+              </div>
+            </li>
+
+        </div>
+      </div>
+    </ul>
+  </div>
+</nav>
+

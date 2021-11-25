@@ -1,0 +1,9 @@
+<div class="navbar1">
+  <a routerLink="/logeo" *ngIf="!isAuthenticated">Administrar</a>
+  <div *ngIf="isAuthenticated">
+  <a routerLink="" [ngClass]="isAuthenticated ? 'active' : ''" (click)="logout()">logout</a>
+  <a routerLink="/addexp" >Experiencia</a>
+  <a routerLink="/addform" >Formacion</a>
+  <a routerLink="/addcomp">Competencia</a>
+  </div>
+</div>

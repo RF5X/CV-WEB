@@ -1,0 +1,36 @@
+<div class="area">
+  <div class="row">
+    <div class="col-xs-12">
+      <form [formGroup]="comp_Form">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="form-group">
+              <label for="descripcion">Competencia</label>
+              <textarea type="text" id="competencia" class="form-control" formControlName="competencia"
+                rows="6"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12">
+          <button type="submit" class="btn btn-success" (click)="onSubmit()">Guardar</button>
+          <button type="button" class="btn btn-danger" (click)="onCancel()">Cancelar</button>
+        </div>
+        <h4>MODIFICACION</h4>
+        <div class="col-xs-12">
+          <div>
+            <select id="compmod" formControlName="compmod" class="max_select" (change)="onEdit()">
+              <option *ngFor="let p of list_Comp_Form" [ngValue]="p">{{ p.competencia }}</option>
+            </select>
+          </div>
+          <div>
+            <select id="lista_modificacion" formControlName="lista_modificacion"  (change)="opcion_modificacion()">
+              <option *ngFor="let p of lista_de_modificacion" [ngValue]="p" >{{ p }}</option>
+            </select>
+          </div>
+          <button type="button" class="btn btn-success" (click)="onUpdate()">mod</button>
+          <button type="button" class="btn btn-danger" (click)="onDelete()">Borrar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

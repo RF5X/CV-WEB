@@ -1,0 +1,103 @@
+.comp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tittle {
+  font-size: 24pt;
+  font-weight: bold;
+  align-items: center;
+}
+.centro{
+  text-align: center;
+}
+table,
+th {
+  vertical-align: center;
+  border: 1px solid black;
+}
+table{
+  width: 100%;
+}
+.tablas{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.tablas_movil{
+      display: none;
+}
+
+.doblehead {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 5pt;
+}
+.division {
+  display: flex;
+  flex-direction: row;
+}
+
+.cab1,.cab2, .solo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cab1 {
+
+  border-right: 1px solid black;
+  padding: 5pt;
+  text-align: center;
+}
+.cab2 {
+  padding: 5pt;
+  text-align: center;
+}
+
+.doble_texto {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 50%;
+}
+
+.textosolo {
+  padding-left: 6%;
+}
+
+
+
+@media screen and (max-width: 993px) {
+
+  .tablas{
+
+    flex-direction: column;
+    align-items: center;
+    text-justify: distribute;
+    justify-content: center;
+    display: none;
+  }
+  .tablas_movil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .doblehead {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 5pt;
+  }
+  .tittle{
+    font-size: 14pt;
+  }
+
+}

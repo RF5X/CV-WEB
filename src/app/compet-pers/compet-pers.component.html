@@ -1,0 +1,171 @@
+<div class="comp">
+  <p class="tittle"> Competencias Personales </p>
+  <div>
+    <div class="tablas">
+      <table>
+        <thead>
+          <tr><div style="margin-left: 5px; font-weight: bold;">- Idioma Inglés</div></tr>
+          <tr>
+            <th class="centro">Comprender</th>
+            <th class="centro">Hablar</th>
+            <th class="centro">Expresión escrita</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>
+              <div class="doblehead">
+                <div  class="cab1">
+                  <td>Comprensión auditiva</td>
+                </div>
+                <div  class="cab2">
+                  <td>Comprensión de lectura</td>
+                </div>
+              </div>
+            </th>
+            <th>
+              <div class="doblehead">
+                <div  class="cab1">
+                  <td>Interacción oral</td>
+                </div>
+                <div  class="cab2">
+                  <td>Expresión oral</td>
+                </div>
+              </div>
+            </th>
+            <th></th>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td>
+              <div class="division">
+                <div class="doble_texto"><td>alto</td></div>
+                <div class="doble_texto"><td>media alta</td></div>
+              </div>
+            </td>
+            <td>
+              <div class="division">
+                <div class="doble_texto"><td>media</td></div>
+                <div class="doble_texto"><td>media</td></div>
+              </div>
+            </td>
+            <td>
+                <div class="solo"><td>media</td></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="tablas_movil">
+    <table>
+      <thead>
+        <tr><div style="margin-left: 5px; font-weight: bold;">- Idioma Inglés</div></tr>
+        <tr>
+          <th class="centro">Comprender</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>
+            <div class="doblehead">
+              <div  class="cab1">
+                <td>Comprensión auditiva</td>
+              </div>
+              <div  class="cab2">
+                <td>Comprensión de lectura</td>
+              </div>
+            </div>
+          </th>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td>
+            <div class="division">
+              <div class="doble_texto"><td>alto</td></div>
+              <div class="doble_texto"><td>media alta</td></div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table>
+      <thead>
+        <tr>
+          <th class="centro">Hablar</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>
+            <div class="doblehead">
+              <div  class="cab1">
+                <td>Interacción oral</td>
+              </div>
+              <div  class="cab2">
+                <td>Expresión oral</td>
+              </div>
+            </div>
+          </th>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td>
+            <div class="division">
+              <div class="doble_texto"><td>media</td></div>
+              <div class="doble_texto"><td>media</td></div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table>
+      <thead>
+        <tr>
+          <th class="centro">Expresión escrita</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>
+            <div>
+              <td class="doblehead"></td>
+            </div>
+          </th>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td>
+            <div>
+              <div class="solo"><td>media</td></div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+<div><br></div>
+</div>
+<div id="comp">
+  <ul>
+    <li *ngFor="let itm of list_comp">{{itm.competencia}}</li>
+  </ul>
+</div>
+<div>
+  <h5>- Competencias Cominicativas</h5>
+  <li *ngFor="let list_comu of list_comp_comunicativas">{{list_comu.competencia}}</li>
+</div>
+<div><br></div>
+<div>
+  <h5>- Competencias Organizativas</h5>
+  <li *ngFor="let list_org of list_comp_organizativas">{{list_org.competencia}}</li>
+</div>
+

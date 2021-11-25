@@ -1,0 +1,11 @@
+.area{
+  width: 100%;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+
+}
+.max_select{
+
+  width: 15em
+}

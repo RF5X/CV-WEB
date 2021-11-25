@@ -1,0 +1,20 @@
+<div class="expro">
+  <p class="tittle"> Experiencia Profesional </p>
+  <div class="global">
+    <div class="bloque" *ngFor="let exp of exp_pro">
+      <div class="fechas">
+        <p>{{exp.fecha_inicio}}</p> <span>&nbsp;-&nbsp;</span>
+        <p>{{exp.fecha_fin}}</p>
+      </div>
+      <div class="separador"></div>
+      <div class="datos">
+        <p class="empleo">{{exp.puesto_de_trabajo}}</p>
+        <p>{{exp.empresa}}</p>
+        <p>{{exp.descripcion}}</p>
+
+      </div>
+      <br>
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+<div class="row">
+  <div class="alert alert-danger" *ngIf="error"><p>{{error}}</p></div>
+  <div class="inicio" >
+    <form #authForm="ngForm" (ngSubmit)="onSubmit(authForm)">
+      <div>
+        <label for="email">E-mail</label>
+        <input type="email" id="email" class="form-control" ngModel name="email" required email>
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <input type="password" id="password" class="form-control" ngModel name="password" required minlrength="6">
+      </div>
+      <div style="margin-top: 10px;">
+        <button class="btn btn-primary" type='submit' [disabled]="!authForm.valid">{{isLoginMode ? 'Iniciar Sesion' : 'Crear Cuenta' }}</button>
+        <!-- |
+        <button class="btn btn-primary" (click)="onSwitchMode()" type="button"> {{ isLoginMode ? ' Crear Cuenta ' : 'Inicar Sesion'}}</button> -->
+      </div>
+    </form>
+  </div>
